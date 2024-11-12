@@ -2,7 +2,7 @@ package stack.leetcode146;
 
 
 class DoublyLinkedList{
-    private final head, tail;
+    private final Node head, tail;
 
     public DoublyLinkedList(){
         head = new Node(0, 0);
@@ -28,7 +28,7 @@ class DoublyLinkedList{
         addToHead(node);
     }
 
-    public org.w3c.dom.Node removeTail(){
+    public Node removeTail(){
         Node lastNode = tail.prev;
         removeNode(lastNode);
         return lastNode;
